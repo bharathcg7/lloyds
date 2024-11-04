@@ -5,7 +5,7 @@ provider "azurerm" {
 }
 
 # Define the resource group
-resource "azurerm_resource_group" "Cloudlearning" {
-  name     = "Cloudlearning"
+resource "azurerm_resource_group" "Cloudlearning2" {
+  name     = "Cloudlearning2"
   location = "UKSouth"
 }
