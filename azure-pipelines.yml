@@ -23,5 +23,10 @@ stages:
           - task: TerraformTaskV3@3
             inputs:
               provider: 'azurerm'
+              command: 'plan'
+              environmentServiceNameAzureRM: 'Azure subscription 1(94b32def-28a7-475d-bbe4-bfa09615697a)'
+          - task: TerraformTaskV3@3
+            inputs:
+              provider: 'azurerm'
               command: 'apply'
-              environmentServiceNameAzureRM: 'Azure subscription 1(1)(94b32def-28a7-475d-bbe4-bfa09615697a)'
+              environmentServiceNameAzureRM: 'Azure subscription 1(94b32def-28a7-475d-bbe4-bfa09615697a)'
