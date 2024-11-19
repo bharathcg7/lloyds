@@ -20,3 +20,8 @@ stages:
               backendAzureRmStorageAccountName: 'manideepstg'
               backendAzureRmContainerName: 'mcontainer'
               backendAzureRmKey: 'terraform.tfstate'
+          - task: TerraformTaskV4@4
+            inputs:
+              provider: 'azurerm'
+              command: 'plan'
+              environmentServiceNameAzureRM: 'Azure subscription 1(94b32def-28a7-475d-bbe4-bfa09615697a)'
